@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Development Practical</title>
+    <link rel="icon" href="fancy.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <h1 id="mainTitle">My Web Development Journey</h1> <!-- ID selector used in CSS -->
+                    <nav>
+                        <ul class="menu"> <!-- Class selector used in CSS -->
+                            <li><a href="index.html" title="Home Page">Home</a></li>
+                            <li><a href="contact.html" title="Contact Me">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-card">
+                        <h2>Welcome to My Web development journey</h2>
+                        <p> BTEC Grade 11 - Information Technology</p>
+                        <hr>
+                        <p>This page demonstrates HTML5 semantic structure, CSS styling, and JavaScript interactivity.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me Section -->
+            <section class="about">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <div class="about-content card">
+                        <p>Hi, I'm NSHUTI Emmanuel a Grade 11 student at King David Academy.<br>I love solving complex problems and building
+                            websites.</p>
+                        <hr>
+                        <p>My interest in web development started when I was able to create my first own website in not more than 2 hours.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Favorites & Learning Section -->
+            <section class="favorites">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>My Favorites & Learning</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <div class="favorites-grid">
+                        <!-- Card for Favorite Websites -->
+                        <div class="card">
+                            <h3>Favorite Websites</h3>
+                            <ul>
+                                <li><a href="https://www.github.com" target="_blank" style="text-decoration: none;">GitHub</a></li>
+                                <li><a href="https://www.w3schools.com/" target="_blank" style="text-decoration: none;">W3Schools</a></li>
+                                <li><a href="https://www.figma.com/" target="_blank" style="text-decoration: none; ">Figma</a></li>
+                            </ul>
+                        </div>
+                        <!-- Card for Programming Languages -->
+                        <div class="card">
+                            <h3>Programming Languages</h3>
+                            <ol>
+                                <li>HTML & CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Marks Record Section -->
+            <section id="marksSection">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Marks Record</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <div class="table-wrapper card">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Unit</th>
+                                    <th>Teacher</th>
+                                    <th>Marks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Programming</td>
+                                    <td>Mr. Cedrick</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>IT Project Management</td>
+                                    <td>Mr. Didier</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Web Development</td>
+                                    <td>Mr. Telesphore</td>
+                                    <td>?</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Media Section -->
+            <section class="media">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Media Example</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <div class="media-grid">
+                        <!-- Image Card -->
+                        <div class="media-card card">
+                            <figure>
+                                <img src="codes pic.avif" alt="Laptop with code on screen" loading="lazy" title="Laptop with code on screen">
+                                <figcaption>Fig.1 - Coding on a laptop.</figcaption>
+                            </figure>
+                        </div>
+                        <!-- Video Card -->
+                        <div class="media-card card">
+                            <figure>
+                                <video controls>
+                                    <source src="tech_video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <figcaption>Fig.2 - Sample video (HTML video).</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Features Section -->
+            <section id="interactive-features">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>✨ Interactive Features</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <div class="features-wrapper card">
+                        <div class="feature-buttons">
+                            <button id="alertBtn" title="Show Alert">Show Alert</button>
+                            <button id="changeTextBtn" title="Change Greetin">Change Greeting</button>
+                            <button id="darkModeBtn" title="Toggle Dark Mode">Toggle Dark Mode</button>
+                            <button id="showDateTimeBtn" title="Show Date/Time">Show Date/Time</button>
+                            <button id="toggleSectionBtn" title="Toggle Table">Toggle Table</button>
+                        </div>
+                        <div class="feature-output">
+                            <p id="greeting">Hello! Welcome to my page.</p>
+                            <p id="dateTimeDisplay"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p> &copy; 2026 My Web Development Practical </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
